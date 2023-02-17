@@ -48,7 +48,7 @@ select name from poems where content like "%前%"
 
  用户查询时，通过之前建立好的索引来查询，将索引中单词对应的文本位置、出现的次数返回给用户，因为有了具体文本的位置，所以就可以将具体内容读取出来了
 
-![](../assets/wps433.jpg)
+![img](../assets/wps433.jpg)
 
 搜索原理简单概括的话可以分为这么几步：
 
