@@ -48,7 +48,7 @@ select name from poems where content like "%前%"
 
  用户查询时，通过之前建立好的索引来查询，将索引中单词对应的文本位置、出现的次数返回给用户，因为有了具体文本的位置，所以就可以将具体内容读取出来了
 
-![](https://gitee.com/lkmvp/mdimage/raw/master/img/wps433.jpg)
+![](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps433.jpg)
 
 搜索原理简单概括的话可以分为这么几步：
 
@@ -66,7 +66,7 @@ select name from poems where content like "%前%"
 
 索引就类似于目录，平时我们使用的都是索引，都是通过主键定位到某条数据，那么倒排索引呢，刚好相反，数据对应到主键。
 
-![](https://gitee.com/lkmvp/mdimage/raw/master/img/wps434.png) 
+![](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps434.png) 
 
  
 
@@ -119,7 +119,7 @@ ElasticSearch（简称ES）是一个分布式、RESTful 风格的搜索和数据
 
 搜索引擎排名：
 
-![image-20230113092904950](https://gitee.com/lkmvp/mdimage/raw/master/img/image-20230113092904950.png)
+![image-20230113092904950](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/image-20230113092904950.png)
 
 参考网站：https://db-engines.com/en/ranking/search+engine
 
@@ -167,7 +167,7 @@ ES Server进程  3节点  raft  (奇数节点)
 
 数据分片 -》lucene实例  分片和副本数   1个ES节点可以有多个lucene实例。也可以指定一个索引的多个分片
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps437.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps437.jpg) 
 
  
 
@@ -177,7 +177,7 @@ ES Server进程  3节点  raft  (奇数节点)
 
    ELK分别是Elasticsearch，Logstash，Kibana这三款软件在一起的简称，在发展的过程中又有新的成员Beats的加入，就形成了Elastic Stack。
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps441.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps441.jpg) 
 
  　　　　　　　              Elastic Stack生态圈
 
@@ -211,7 +211,7 @@ ES Server进程  3节点  raft  (奇数节点)
 
 可以参考es的环境文件elasticsearch-env.bat
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps444.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps444.jpg) 
 
 ES的jdk环境生效的优先级配置ES_JAVA_HOME>JAVA_HOME>ES_HOME
 
@@ -223,7 +223,7 @@ ES的jdk环境生效的优先级配置ES_JAVA_HOME>JAVA_HOME>ES_HOME
 
 选择版本：7.17.3
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps445.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps445.jpg) 
 
  
 
@@ -336,7 +336,7 @@ bin/elasticsearch -d
 
  
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps446.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps446.jpg) 
 
 注意：es默认不能用root用户启动，生产环境建议为elasticsearch创建用户。
 
@@ -350,11 +350,11 @@ chown -R es:es elasticsearch-17.3
 
 运行http://localhost:9200/
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps447.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps447.jpg) 
 
 如果ES服务启动异常，会有提示：
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps448.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps448.jpg) 
 
  
 
@@ -448,7 +448,7 @@ Kibana是一个开源分析和可视化平台，旨在与Elasticsearch协同工�
 
 选择版本：7.17.3
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps449.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps449.jpg) 
 
 **2）修改Kibana.yml**
 
@@ -484,7 +484,7 @@ netstat -tunlp | grep 5601
 
 访问Kibana: http://localhost:5601/
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps450.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps450.jpg) 
 
  
 
@@ -578,7 +578,7 @@ POST _analyze
 
 
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps451.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps451.jpg) 
 
 **离线安装**
 
@@ -632,7 +632,7 @@ PUT /es_db
 
  
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps452.jpg) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps452.jpg) 
 
  
 
@@ -650,7 +650,7 @@ PUT /es_db
 
  RDMS —事务性/ Join	
 
-![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps453.png) 
+![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps453.png) 
 
 |               |                    |       |          |        |
 | ------------- | ------------------ | ----- | -------- | ------ |
@@ -663,7 +663,7 @@ PUT /es_db
 
 **一个索引由一个名字来标识（必须全部是小写字母的），并且当我们要对对应于这个索引中的文档进行索引、搜索、更新和删除的时候，都要使用到这个名字。**
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps454.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps454.jpg)** 
 
 ****
 
@@ -697,7 +697,7 @@ PUT /es_db
 
 **文档元数据**
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps455.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps455.jpg)** 
 
 **元数据，用于标注文档的相关信息：**
 
@@ -759,7 +759,7 @@ PUT /es_db/_settings
 
 ****
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps456.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps456.jpg)** 
 
 ****
 
@@ -779,7 +779,7 @@ HEAD /es_db
 
 ****
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps457.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps457.jpg)** 
 
 ****
 
@@ -908,17 +908,17 @@ POST /es_db/_doc
 
 ****
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps458.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps458.jpg)** 
 
 **注意:POST和PUT都能起到创建/更新的作用，PUT需要对一个具体的资源进行操作也就是要确定id才能进行更新/创建，而POST是可以针对整个资源集合进行操作的，如果不写id就由ES生成一个唯一id进行创建新文档，如果填了id那就针对这个id的文档进行创建/更新**
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps459.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps459.jpg)** 
 
 ****
 
 **Create -如果ID已经存在，会失败**
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps460.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps460.jpg)** 
 
 ****
 
@@ -947,7 +947,7 @@ GET /es_db/_doc/1
 
 ****
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps461.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps461.jpg)** 
 
  **使用_update部分更新，格式: POST /索引名称/_update/id**
 
@@ -971,7 +971,7 @@ GET /es_db/_doc/1
 
 ****
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps462.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps462.jpg)** 
 
 ****
 
@@ -993,7 +993,7 @@ POST /es_db/_update_by_query
 
 ****
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps463.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps463.jpg)** 
 
 ****
 
@@ -1010,7 +1010,7 @@ POST /es_db/_doc/2?if_seq_no=21&if_primary_term=6
 
 **如果版本号不对，会抛出版本冲突异常，如下图：**
 
-**![img](https://gitee.com/lkmvp/mdimage/raw/master/img/wps464.jpg)** 
+**![img](https://cdn.jsdelivr.net/gh/18437026130/Typora/main/img/wps464.jpg)** 
 
 ****
 
